@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace ClassLibrary1
+namespace ClassLibrary1.Tests
 {
     [TestFixture]
     public class ScssCompilerTests
@@ -99,5 +99,6 @@ namespace ClassLibrary1
 
             Assert.That(result.Variables.Count, Is.EqualTo(1));
         }
+
     }
 }

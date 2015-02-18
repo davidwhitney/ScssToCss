@@ -9,7 +9,7 @@ namespace ClassLibrary1
     {
         private const string NamePattern = @"(?<name>\$[\-\w]+)";
         private readonly Regex _variableName = new Regex(NamePattern);
-        private readonly Regex _variableNameAndValue = new Regex(NamePattern + @"\s*:\s*(?<value>.+);");
+        private readonly Regex _variableNameAndValue = new Regex(NamePattern + @"\s*:\s*(?<value>.+);[\s]*");
 
         public string Compile(string scss)
         {
